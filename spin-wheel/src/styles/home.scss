@@ -1,0 +1,10 @@
+@use 'base';
+
+
+.home-wrapper {
+    background-color: #fff;
+
+    .title-text {
+        font-family: base.$base-font;
+    }
+}
