@@ -1,10 +1,8 @@
 @use 'base';
 
 
-.home-wrapper {
-    background-color: #fff;
-
-    .title-text {
-        font-family: base.$base-font;
+.spin-wrap {
+    .spin-main {
+    background-color: $base-color;
     }
 }

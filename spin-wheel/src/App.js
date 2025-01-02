@@ -5,7 +5,7 @@ import { SpinWheel } from './comp/spin';
 function App() {
   return (
     <div className="App">
-      
+      <SpinWheel />
     </div>
   );
 }
