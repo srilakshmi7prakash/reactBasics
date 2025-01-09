@@ -1,0 +1,10 @@
+.spin-wrap{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(131, 88, 71);
+    margin: auto;
+    border-radius: 50%;
+}
+.spin-bt{
+    margin-top: 30px;
+}
