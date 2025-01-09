@@ -1,10 +1,73 @@
-.spin-wrap{
-    width: 350px;
-    height: 350px;
-    background-color: rgb(131, 88, 71);
-    margin: auto;
-    border-radius: 50%;
+.spin-wheel,
+.seperators {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(131, 88, 71);
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
 }
-.spin-bt{
-    margin-top: 30px;
+
+.seperators {
+  background-color: unset;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+}
+
+.seperators .sep:nth-child(1),
+.seperators .sep:nth-child(3) {
+  border-right: 1px solid black;
+}
+
+.seperators .sep:nth-child(1),
+.seperators .sep:nth-child(2) {
+  border-bottom: 1px solid black;
+}
+
+.seperators .sep::after {
+  content: "";
+  height: 1px;
+  background-color: #000;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  transform-origin: center;
+}
+
+.seperators .sep:nth-child(1)::after {
+  width: 115px; 
+  transform: translate(-50%, -50%) rotate(45deg); 
+}
+
+.seperators .sep:nth-child(2)::after {
+  width: 115px; 
+  transform: translate(-50%, -50%) rotate(-45deg); 
+}
+
+.seperators .sep:nth-child(3)::after {
+  width: 115px; 
+  transform: translate(-50%, -50%) rotate(135deg); 
+}
+
+.seperators .sep:nth-child(4)::after {
+  width: 115px; 
+  transform: translate(-50%, -50%) rotate(-135deg); 
+}
+
+.spin-bt {
+  margin-top: 30px;
+}
+
+.sep {
+  position: relative;
+}
+
+.seperators {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 345px;
+  left: 592px;
 }

@@ -11,16 +11,29 @@ function Spinwheel() {
     }
     return (
         <div>
-            <div className="spin-wrap"
-                style={{
-                    transform: `rotate(${currentdeg}deg)`
-                }
-                }
-            >
-                <h3>Generate</h3>
-                <p>{currentdeg}</p>
+            <div className='spin-wrap'>
+
+                <div className="spin-wheel"
+                    style={{
+                        transform: `rotate(${currentdeg}deg)`
+                    }
+                    }
+                >
+                </div>
+                <div className='seperators'
+                    style={{
+                        transform: `rotate(${currentdeg}deg)`
+                    }
+                    }
+                >
+                    <div className='sep'></div>
+                    <div className='sep'></div>
+                    <div className='sep'></div>
+                    <div className='sep'></div>
+                </div>
+                <button onClick={spinRand} className='spin-bt'>Generate random</button>
             </div>
-            <button onClick={spinRand} className='spin-bt'>Generate random</button>
+
         </div>
     );
 }
